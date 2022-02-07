@@ -1,9 +1,9 @@
-# Chessboard
+# Exercise: Chessboard
 
-## Chessboard with Flex
+### Chessboard with Flex
 
-### [DEMO]()
+#### [DEMO](https://chessboard-sage.vercel.app/)
 
-## Chessboard with Grid
+### Chessboard with Grid
 
-### [DEMO]()
+#### [DEMO]()
