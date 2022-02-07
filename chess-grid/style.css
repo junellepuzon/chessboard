@@ -11,8 +11,8 @@ body {
 
 .chessboard {
   display: grid;
-  grid-template-columns: repeat(8, 80px);
-  grid-template-rows: repeat(8, 80px);
+  grid-template-columns: repeat(8, 5vw);
+  grid-template-rows: repeat(8, 5vw);
   justify-content: center;
   align-items: center;
   box-shadow: 0 8px 8px rgb(0 0 0 / 65%);
@@ -24,14 +24,16 @@ body {
 .dark {
   background-image: url(images/lightwood.jpeg);
   display: grid;
-  width: 80px;
-  height: 80px;
+  width: 5vw;
+  height: 5vw;
 }
 
 .chesspiece {
-  width: 70px;
-  height: 70px;
-  margin: 5px;
+  display: grid;
+  place-content: center;
+  width: 4vw;
+  height: 4vw;
+  margin: auto;
   z-index: 2;
 }
 
@@ -41,7 +43,7 @@ body {
 
 @keyframes whitePawnToA3 {
   to {
-    transform: translateY(-85px);
+    transform: translateY(-5vw);
   }
 }
 
@@ -51,46 +53,47 @@ body {
 
 @keyframes blackPawnToE5 {
   to {
-    transform: translateY(158px);
+    transform: translateY(10vw);
   }
 }
 
 .whitepawne5 {
-  animation: whitePawnToE4 2s ease-in-out 9s 1 forwards, fadeIn 50s 18.3s 1 forwards;
+  animation: whitePawnToE4 2s ease-in-out 9s 1 forwards,
+    fadeIn 50s 18.3s 1 forwards;
 }
 
 @keyframes whitePawnToE4 {
   to {
-    transform: translateY(-162px);
+    transform: translateY(-10vw);
   }
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-}
-to {
+  }
+  to {
     opacity: 100;
+  }
 }
-}
-
 
 .blackqueen {
-  animation: blackQueenToH4 3.5s ease-in-out 11s 1 forwards, blackQueenToE4 2s ease-in-out 16.5s 1 forwards;
+  animation: blackQueenToH4 3.5s ease-in-out 11s 1 forwards,
+    blackQueenToE4 2s ease-in-out 16.5s 1 forwards;
 }
 
 @keyframes blackQueenToH4 {
   to {
-    transform: translate(320px, 320px);
+    transform: translate(20vw, 20vw);
   }
 }
 
 @keyframes blackQueenToE4 {
   from {
-    transform: translate(320px, 320px);
+    transform: translate(20vw, 20vw);
   }
   to {
-    transform: translate(80px, 320px);
+    transform: translate(5vw, 20vw);
   }
 }
 
@@ -100,48 +103,50 @@ to {
 
 @keyframes whiteKingToE2 {
   to {
-    transform: translateY(-80px);
+    transform: translateY(-5vw);
   }
 }
 
 .chess-message {
+  height: 4vh;
+  width: 8vw;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 164px;
   border: 1px solid black;
-  padding: 20px 100px;
+  padding: 1vw 8vw;
   border-radius: 5px;
-  background-color: rgb(41, 41, 41);
-  z-index: 3;
-  box-shadow: 0 0 150px 75px rgb(255, 255, 255);
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px; 
-  color: white;   
+  background-color: rgb(24, 24, 24);
+  z-index: 20;
+  box-shadow: 0 0 10vw 5vw white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2vw;
+  color: white;
+  margin-left: 8vw;
 }
 
-.chess-message {
+ .chess-message {
   animation: message 19.5s 1 forwards;
 }
 
 @keyframes message {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   25% {
-      opacity: 0;
+    opacity: 0;
   }
   50% {
-      opacity: 0;
+    opacity: 0;
   }
   75% {
-      opacity: 0;
+    opacity: 0;
   }
   95% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 100;
+    opacity: 100;
   }
 }

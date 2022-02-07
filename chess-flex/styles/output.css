@@ -12,7 +12,7 @@ body {
           align-items: center;
   margin: 0;
   padding: 0;
-  background-color: #fffbf6;
+  background-color: #dcdfd9;
 }
 
 .chessboard {
@@ -230,7 +230,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid black;
-  padding: 2vw 10vw;
+  padding: 1vw 8vw;
   border-radius: 5px;
   background-color: #fffcf8;
   z-index: 20;
