@@ -1,6 +1,6 @@
 .chessboard {
-  height: 640px;
-  width: 640px;
+  height: 40vw;
+  width: 40vw;
   display: flex;
   flex-wrap: wrap;
   box-shadow: 0 8px 8px rgba(2, 2, 2, 0.65);
@@ -15,8 +15,8 @@
 }
 
 .tile {
-  height: 80px;
-  width: 80px;
+  height: 5vw;
+  width: 5vw;
   display: flex;
   justify-content: center;
   align-items: center;

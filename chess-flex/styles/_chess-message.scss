@@ -1,14 +1,16 @@
 .chess-message {
+    height: 4vh;
+    width: 8vw;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    padding: 20px 100px;
+    padding: 2vw 10vw;
     border-radius: 5px;
-    background-color: white;
+    background-color: rgb(255, 252, 248);
     z-index: 20;
-    box-shadow: 0 0 150px 75px black;
+    box-shadow: 0 0 10vw 5vw black;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;    
+    font-size: 1.2vw;    
 }

@@ -12,12 +12,12 @@ body {
           align-items: center;
   margin: 0;
   padding: 0;
-  background-color: #e9dfda;
+  background-color: #fffbf6;
 }
 
 .chessboard {
-  height: 640px;
-  width: 640px;
+  height: 40vw;
+  width: 40vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,8 +36,8 @@ body {
 }
 
 .tile {
-  height: 80px;
-  width: 80px;
+  height: 5vw;
+  width: 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,8 +53,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 70px;
-  width: 70px;
+  height: 4vw;
+  width: 4vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -68,15 +68,15 @@ body {
 
 @-webkit-keyframes whitePawnToE4 {
   to {
-    -webkit-transform: translateY(-164px);
-            transform: translateY(-164px);
+    -webkit-transform: translateY(-10vw);
+            transform: translateY(-10vw);
   }
 }
 
 @keyframes whitePawnToE4 {
   to {
-    -webkit-transform: translateY(-164px);
-            transform: translateY(-164px);
+    -webkit-transform: translateY(-10vw);
+            transform: translateY(-10vw);
   }
 }
 
@@ -87,15 +87,15 @@ body {
 
 @-webkit-keyframes blackPawnToE5 {
   to {
-    -webkit-transform: translateY(159px);
-            transform: translateY(159px);
+    -webkit-transform: translateY(10vw);
+            transform: translateY(10vw);
   }
 }
 
 @keyframes blackPawnToE5 {
   to {
-    -webkit-transform: translateY(159px);
-            transform: translateY(159px);
+    -webkit-transform: translateY(10vw);
+            transform: translateY(10vw);
   }
 }
 
@@ -124,15 +124,15 @@ body {
 
 @-webkit-keyframes blackKingToE7 {
   to {
-    -webkit-transform: translateY(80px);
-            transform: translateY(80px);
+    -webkit-transform: translateY(5vw);
+            transform: translateY(5vw);
   }
 }
 
 @keyframes blackKingToE7 {
   to {
-    -webkit-transform: translateY(80px);
-            transform: translateY(80px);
+    -webkit-transform: translateY(5vw);
+            transform: translateY(5vw);
   }
 }
 
@@ -143,29 +143,29 @@ body {
 
 @-webkit-keyframes whiteQueenToH5 {
   to {
-    -webkit-transform: translate(320px, -320px);
-            transform: translate(320px, -320px);
+    -webkit-transform: translate(20vw, -20vw);
+            transform: translate(20vw, -20vw);
   }
 }
 
 @keyframes whiteQueenToH5 {
   to {
-    -webkit-transform: translate(320px, -320px);
-            transform: translate(320px, -320px);
+    -webkit-transform: translate(20vw, -20vw);
+            transform: translate(20vw, -20vw);
   }
 }
 
 @-webkit-keyframes whiteQueenToE5 {
   to {
-    -webkit-transform: translate(80px, -320px);
-            transform: translate(80px, -320px);
+    -webkit-transform: translate(5vw, -20vw);
+            transform: translate(5vw, -20vw);
   }
 }
 
 @keyframes whiteQueenToE5 {
   to {
-    -webkit-transform: translate(80px, -320px);
-            transform: translate(80px, -320px);
+    -webkit-transform: translate(5vw, -20vw);
+            transform: translate(5vw, -20vw);
   }
 }
 
@@ -217,6 +217,8 @@ body {
 }
 
 .chess-message {
+  height: 4vh;
+  width: 8vw;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -228,13 +230,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid black;
-  padding: 20px 100px;
+  padding: 2vw 10vw;
   border-radius: 5px;
-  background-color: white;
+  background-color: #fffcf8;
   z-index: 20;
-  -webkit-box-shadow: 0 0 150px 75px black;
-          box-shadow: 0 0 150px 75px black;
+  -webkit-box-shadow: 0 0 10vw 5vw black;
+          box-shadow: 0 0 10vw 5vw black;
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-size: 1.2vw;
 }
 /*# sourceMappingURL=output.css.map */

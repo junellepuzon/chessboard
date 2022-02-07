@@ -4,7 +4,7 @@
 
 @keyframes whitePawnToE4 {
     to {
-        transform: translateY(-164px);
+        transform: translateY(-10vw);
     }
 }
 
@@ -14,7 +14,7 @@
 
 @keyframes blackPawnToE5 {
     to {
-        transform: translateY(159px);
+        transform: translateY(10vw);
     }
 }
 
@@ -33,7 +33,7 @@
 
 @keyframes blackKingToE7 {
     to {
-        transform: translateY(80px);
+        transform: translateY(5vw);
     }
 }
 
@@ -43,13 +43,13 @@
 
 @keyframes whiteQueenToH5 {
     to {
-        transform: translate(320px, -320px);
+        transform: translate(20vw, -20vw);
     }
 }
 
 @keyframes whiteQueenToE5 {
     to {
-        transform: translate(80px, -320px);
+        transform: translate(5vw, -20vw);
     }
 }
 
@@ -76,4 +76,4 @@
     100% {
         opacity: 100;
     }
-}
+} 
