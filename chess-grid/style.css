@@ -1,0 +1,147 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(121, 119, 118);
+}
+
+.chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 80px);
+  grid-template-rows: repeat(8, 80px);
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 8px rgb(0 0 0 / 65%);
+  border: 20px solid rgb(87, 79, 75);
+  border-radius: 10px;
+  background-color: rgb(250, 227, 200);
+}
+
+.dark {
+  background-image: url(images/lightwood.jpeg);
+  display: grid;
+  width: 80px;
+  height: 80px;
+}
+
+.chesspiece {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+  z-index: 2;
+}
+
+.whitepawna2 {
+  animation: whitePawnToA3 1.5s ease-in-out 5s 1 forwards;
+}
+
+@keyframes whitePawnToA3 {
+  to {
+    transform: translateY(-85px);
+  }
+}
+
+.blackpawn {
+  animation: blackPawnToE5 2s ease-in-out 7s 1 forwards;
+}
+
+@keyframes blackPawnToE5 {
+  to {
+    transform: translateY(158px);
+  }
+}
+
+.whitepawne5 {
+  animation: whitePawnToE4 2s ease-in-out 9s 1 forwards, fadeIn 50s 18.3s 1 forwards;
+}
+
+@keyframes whitePawnToE4 {
+  to {
+    transform: translateY(-162px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+}
+to {
+    opacity: 100;
+}
+}
+
+
+.blackqueen {
+  animation: blackQueenToH4 3.5s ease-in-out 11s 1 forwards, blackQueenToE4 2s ease-in-out 16.5s 1 forwards;
+}
+
+@keyframes blackQueenToH4 {
+  to {
+    transform: translate(320px, 320px);
+  }
+}
+
+@keyframes blackQueenToE4 {
+  from {
+    transform: translate(320px, 320px);
+  }
+  to {
+    transform: translate(80px, 320px);
+  }
+}
+
+.whiteking {
+  animation: whiteKingToE2 1.5s ease-in-out 14.5s 1 forwards;
+}
+
+@keyframes whiteKingToE2 {
+  to {
+    transform: translateY(-80px);
+  }
+}
+
+.chess-message {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 164px;
+  border: 1px solid black;
+  padding: 20px 100px;
+  border-radius: 5px;
+  background-color: rgb(41, 41, 41);
+  z-index: 3;
+  box-shadow: 0 0 150px 75px rgb(255, 255, 255);
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px; 
+  color: white;   
+}
+
+.chess-message {
+  animation: message 19.5s 1 forwards;
+}
+
+@keyframes message {
+  0% {
+      opacity: 0;
+  }
+  25% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 0;
+  }
+  75% {
+      opacity: 0;
+  }
+  95% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 100;
+  }
+}
