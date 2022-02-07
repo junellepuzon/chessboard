@@ -48,6 +48,9 @@
 }
 
 @keyframes whiteQueenToE5 {
+    from {
+        transform: translate(20vw, -20vw);
+    }
     to {
         transform: translate(5vw, -20vw);
     }
