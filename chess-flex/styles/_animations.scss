@@ -1,0 +1,79 @@
+.whitepawn {
+    animation: whitePawnToE4 2s ease-in-out 5s 1 forwards;
+}
+
+@keyframes whitePawnToE4 {
+    to {
+        transform: translateY(-164px);
+    }
+}
+
+.blackpawn {
+    animation: blackPawnToE5 2s ease-in-out 7.5s 1 forwards, fadeIn 50s 17.8s 1 forwards;
+}
+
+@keyframes blackPawnToE5 {
+    to {
+        transform: translateY(159px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}
+
+.blackking {
+    animation: blackKingToE7 2s ease-in-out 14s 1 forwards;
+}
+
+@keyframes blackKingToE7 {
+    to {
+        transform: translateY(80px);
+    }
+}
+
+.whitequeen {
+    animation: whiteQueenToH5 3.5s ease-in-out 10s forwards, whiteQueenToE5 2s ease-in-out 16s 1 forwards;
+}
+
+@keyframes whiteQueenToH5 {
+    to {
+        transform: translate(320px, -320px);
+    }
+}
+
+@keyframes whiteQueenToE5 {
+    to {
+        transform: translate(80px, -320px);
+    }
+}
+
+.chess-message {
+    animation: message 19s 1 forwards;
+}
+
+@keyframes message {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
