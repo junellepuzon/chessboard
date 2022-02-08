@@ -1,0 +1,8 @@
+.chesspiece {
+  display: grid;
+  place-content: center;
+  width: 4vw;
+  height: 4vw;
+  margin: auto;
+  z-index: 2;
+}

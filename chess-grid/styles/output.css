@@ -1,0 +1,262 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #797776;
+}
+
+.chessboard {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (5vw)[8];
+      grid-template-columns: repeat(8, 5vw);
+  -ms-grid-rows: (5vw)[8];
+      grid-template-rows: repeat(8, 5vw);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 8px 8px rgba(2, 2, 2, 0.65);
+          box-shadow: 0 8px 8px rgba(2, 2, 2, 0.65);
+  border: 20px solid #574f4b;
+  border-radius: 10px;
+  background-color: #fae3c8;
+}
+
+.dark {
+  background-image: url(images/lightwood.jpeg);
+  display: -ms-grid;
+  display: grid;
+  width: 5vw;
+  height: 5vw;
+}
+
+.chesspiece {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  width: 4vw;
+  height: 4vw;
+  margin: auto;
+  z-index: 2;
+}
+
+.chess-message {
+  height: 4vh;
+  width: 8vw;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  padding: 1vw 8vw;
+  border-radius: 5px;
+  background-color: #181818;
+  z-index: 20;
+  -webkit-box-shadow: 0 0 10vw 5vw white;
+          box-shadow: 0 0 10vw 5vw white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2vw;
+  color: white;
+  margin-left: 8vw;
+}
+
+.whitepawna2 {
+  -webkit-animation: whitePawnToA3 1.5s ease-in-out 5s 1 forwards;
+          animation: whitePawnToA3 1.5s ease-in-out 5s 1 forwards;
+}
+
+@-webkit-keyframes whitePawnToA3 {
+  to {
+    -webkit-transform: translateY(-5vw);
+            transform: translateY(-5vw);
+  }
+}
+
+@keyframes whitePawnToA3 {
+  to {
+    -webkit-transform: translateY(-5vw);
+            transform: translateY(-5vw);
+  }
+}
+
+.blackpawn {
+  -webkit-animation: blackPawnToE5 2s ease-in-out 7s 1 forwards;
+          animation: blackPawnToE5 2s ease-in-out 7s 1 forwards;
+}
+
+@-webkit-keyframes blackPawnToE5 {
+  to {
+    -webkit-transform: translateY(10vw);
+            transform: translateY(10vw);
+  }
+}
+
+@keyframes blackPawnToE5 {
+  to {
+    -webkit-transform: translateY(10vw);
+            transform: translateY(10vw);
+  }
+}
+
+.whitepawne5 {
+  -webkit-animation: whitePawnToE4 2s ease-in-out 9s 1 forwards, fadeIn 50s 18.3s 1 forwards;
+          animation: whitePawnToE4 2s ease-in-out 9s 1 forwards, fadeIn 50s 18.3s 1 forwards;
+}
+
+@-webkit-keyframes whitePawnToE4 {
+  to {
+    -webkit-transform: translateY(-10vw);
+            transform: translateY(-10vw);
+  }
+}
+
+@keyframes whitePawnToE4 {
+  to {
+    -webkit-transform: translateY(-10vw);
+            transform: translateY(-10vw);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+.blackqueen {
+  -webkit-animation: blackQueenToH4 3.5s ease-in-out 11s 1 forwards, blackQueenToE4 2s ease-in-out 16.5s 1 forwards;
+          animation: blackQueenToH4 3.5s ease-in-out 11s 1 forwards, blackQueenToE4 2s ease-in-out 16.5s 1 forwards;
+}
+
+@-webkit-keyframes blackQueenToH4 {
+  to {
+    -webkit-transform: translate(20vw, 20vw);
+            transform: translate(20vw, 20vw);
+  }
+}
+
+@keyframes blackQueenToH4 {
+  to {
+    -webkit-transform: translate(20vw, 20vw);
+            transform: translate(20vw, 20vw);
+  }
+}
+
+@-webkit-keyframes blackQueenToE4 {
+  from {
+    -webkit-transform: translate(20vw, 20vw);
+            transform: translate(20vw, 20vw);
+  }
+  to {
+    -webkit-transform: translate(5vw, 20vw);
+            transform: translate(5vw, 20vw);
+  }
+}
+
+@keyframes blackQueenToE4 {
+  from {
+    -webkit-transform: translate(20vw, 20vw);
+            transform: translate(20vw, 20vw);
+  }
+  to {
+    -webkit-transform: translate(5vw, 20vw);
+            transform: translate(5vw, 20vw);
+  }
+}
+
+.whiteking {
+  -webkit-animation: whiteKingToE2 1.5s ease-in-out 14.5s 1 forwards;
+          animation: whiteKingToE2 1.5s ease-in-out 14.5s 1 forwards;
+}
+
+@-webkit-keyframes whiteKingToE2 {
+  to {
+    -webkit-transform: translateY(-5vw);
+            transform: translateY(-5vw);
+  }
+}
+
+@keyframes whiteKingToE2 {
+  to {
+    -webkit-transform: translateY(-5vw);
+            transform: translateY(-5vw);
+  }
+}
+
+.chess-message {
+  -webkit-animation: message 19.5s 1 forwards;
+          animation: message 19.5s 1 forwards;
+}
+
+@-webkit-keyframes message {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes message {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+/*# sourceMappingURL=output.css.map */
